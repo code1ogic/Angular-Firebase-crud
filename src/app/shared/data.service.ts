@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { AngularFireStorage } from '@angular/fire/compat/storage';
+import { FileMetaData } from '../model/file-meta-data';
 import { Student } from '../model/student';
 
 @Injectable({
@@ -7,7 +9,7 @@ import { Student } from '../model/student';
 })
 export class DataService {
 
-  constructor(private afs : AngularFirestore) { }
+  constructor(private afs : AngularFirestore, private fireStorage : AngularFireStorage) { }
 
 
   // add student
@@ -23,7 +25,7 @@ export class DataService {
 
   // delete student
   deleteStudent(student : Student) {
-    return this.afs.doc('/Students/'+student.id).delete();
+     this.afs.doc('/Students/'+student.id).delete();
   }
 
   // update student
@@ -31,5 +33,5 @@ export class DataService {
     this.deleteStudent(student);
     this.addStudent(student);
   }
-
+    
 }

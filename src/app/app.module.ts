@@ -11,7 +11,8 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { FormsModule } from '@angular/forms';
 import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 import { VarifyEmailComponent } from './component/varify-email/varify-email.component';
-import { AngularFirestore } from '@angular/fire/compat/firestore'
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { FileuploadComponent } from './component/fileupload/fileupload.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AngularFirestore } from '@angular/fire/compat/firestore'
     RegisterComponent,
     DashboardComponent,
     ForgotPasswordComponent,
-    VarifyEmailComponent
+    VarifyEmailComponent,
+    FileuploadComponent
   ],
   imports: [
     BrowserModule,
