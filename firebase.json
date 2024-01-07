@@ -1,0 +1,6 @@
+{
+  "hosting": {
+    "public": "dist/ui-gate-access",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/firebase-angular-crud'),
+      dir: require('path').join(__dirname, './coverage/ui-gate-access'),
       subdir: '.',
       reporters: [
         { type: 'html' },

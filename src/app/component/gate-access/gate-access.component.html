@@ -1,0 +1,53 @@
+<div class="container-fluid">
+  <div class="row mt-5">
+    <div class="col"></div>
+    <div class="col-4">
+      <div class="card shadow">
+        <div class="card-body">
+          <div class="mb-3">
+            <h4 class="text-dark text-muted">Login</h4>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="userId">User ID:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="userId"
+              [(ngModel)]="userId" />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="locationId">Location ID:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="locationId"
+              [(ngModel)]="locationId" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="gateId">Gate ID:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="gateId"
+              [(ngModel)]="gateId" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="allowedNumber"
+              >Allowed Number:</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="allowedNumber"
+              [(ngModel)]="allowedNumber" />
+          </div>
+          <div>
+            <button (click)="saveToFirebase()">Save The Gate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
